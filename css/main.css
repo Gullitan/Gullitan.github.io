@@ -1,0 +1,2517 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700,900&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700,900&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900");
+@font-face {
+  font-family: 'Muller Regular';
+  src: url("../fonts/MullerRegular.eot?v=4.7.0");
+  src: url("../fonts/MullerRegular.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerRegular.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerRegular.woff?v=4.7.0") format("woff"), url("../fonts/MullerRegular.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerRegular.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Black';
+  src: url("../fonts/MullerBlack.eot?v=4.7.0");
+  src: url("../fonts/MullerBlack.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerBlack.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerBlack.woff?v=4.7.0") format("woff"), url("../fonts/MullerBlack.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerBlack.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Light';
+  src: url("../fonts/MullerLight.eot?v=4.7.0");
+  src: url("../fonts/MullerLight.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerLight.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerLight.woff?v=4.7.0") format("woff"), url("../fonts/MullerLight.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerLight.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Medium';
+  src: url("../fonts/MullerMedium.eot");
+  src: url("../fonts/MullerMedium.woff2") format("woff2"), url("../fonts/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium.ttf") format("truetype"), url("../fonts/MullerMedium.svg#MullerMedium") format("svg"), url("../fonts/MullerMedium.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  padding: 0 15px;
+  height: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 10px;
+  transition: .2s;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-family: "Muller Regular"; }
+  .button-color {
+    background-color: #ac9455;
+    color: #fff; }
+    .button-color:hover, .button-color:focus {
+      background-color: #caac5d; }
+  .button-transparent {
+    background-color: transparent;
+    border: 2px solid #ac9455;
+    color: #3f403f;
+    line-height: 35px; }
+    .button-transparent:hover, .button-transparent:focus {
+      border-color: #caac5d; }
+  .button-white {
+    background-color: #fff;
+    color: #3f403f;
+    font-family: "Muller Medium";
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.44); }
+
+.dots {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle; }
+
+.owl-dot {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background-color: #f2f2f3;
+  border-radius: 50%;
+  margin: 0 6px;
+  transition: .2s;
+  cursor: pointer; }
+  .owl-dot:first-child {
+    margin-left: 30px; }
+  .owl-dot:last-child {
+    margin-right: 30px; }
+  .owl-dot.active {
+    background-color: #ac9455; }
+
+.gray-dots .owl-dot {
+  background-color: #b9b9b9; }
+  .gray-dots .owl-dot.active {
+    background-color: #ac9455; }
+
+.prev-slide, .owl-prev, .owl-next, .next-slide {
+  background: transparent url(../img/arrow.svg) center center no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  outline: none;
+  font-size: 0;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle; }
+
+.next-slide, .owl-next {
+  -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1); }
+
+.title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  font-size: 55px;
+  color: #ac9455;
+  text-align: center;
+  display: block; }
+  .title-small {
+    font-size: 35px;
+    text-align: left; }
+  .title-description {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    font-size: 14px;
+    color: #898989;
+    text-align: center;
+    position: relative; }
+    .title-description:after {
+      content: '';
+      display: block;
+      max-width: 215px;
+      width: 100%;
+      height: 1px;
+      background-color: #ac9455;
+      margin: 26px auto 0; }
+
+.tabs-content {
+  display: none; }
+
+.tabs-content.active {
+  display: block; }
+
+.input-text {
+  display: block;
+  position: relative; }
+  .input-text.required:before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #ac9455;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0; }
+  .input-text input {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #ccc;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    color: #707478;
+    transition: .2s;
+    padding: 0 15px; }
+    .input-text input::-webkit-input-placeholder {
+      color: #707478; }
+    .input-text input::-moz-placeholder {
+      color: #707478; }
+    .input-text input:-ms-input-placeholder {
+      color: #707478; }
+    .input-text input:-moz-placeholder {
+      color: #707478; }
+    .input-text input:focus {
+      background-color: #9a9ea3 !important;
+      color: #f2f2f2 !important; }
+      .input-text input:focus::-webkit-input-placeholder {
+        color: #f2f2f2; }
+      .input-text input:focus::-moz-placeholder {
+        color: #f2f2f2; }
+      .input-text input:focus:-ms-input-placeholder {
+        color: #f2f2f2; }
+      .input-text input:focus:-moz-placeholder {
+        color: #f2f2f2; }
+
+.area-text {
+  display: block;
+  position: relative; }
+  .area-text textarea {
+    width: 100%;
+    height: 120px;
+    background-color: #ccc;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    color: #707478;
+    transition: .2s;
+    padding: 15px;
+    resize: none; }
+    .area-text textarea::-webkit-input-placeholder {
+      color: #707478; }
+    .area-text textarea::-moz-placeholder {
+      color: #707478; }
+    .area-text textarea:-ms-input-placeholder {
+      color: #707478; }
+    .area-text textarea:-moz-placeholder {
+      color: #707478; }
+    .area-text textarea:focus {
+      background-color: #9a9ea3 !important;
+      color: #f2f2f2 !important; }
+      .area-text textarea:focus::-webkit-input-placeholder {
+        color: #f2f2f2; }
+      .area-text textarea:focus::-moz-placeholder {
+        color: #f2f2f2; }
+      .area-text textarea:focus:-ms-input-placeholder {
+        color: #f2f2f2; }
+      .area-text textarea:focus:-moz-placeholder {
+        color: #f2f2f2; }
+
+.checkbox-text {
+  display: none; }
+  .checkbox-text + label {
+    display: inline-block;
+    font-family: "Muller Black";
+    font-size: 12px;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    transition: .2s;
+    border-bottom: 1px solid transparent;
+    vertical-align: bottom;
+    cursor: pointer;
+    letter-spacing: 1px; }
+  .checkbox-text:checked + label {
+    color: #ac9455;
+    border-bottom-color: #ac9455; }
+
+.checkbox-color {
+  display: none; }
+  .checkbox-color + label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer; }
+    .checkbox-color + label:before {
+      content: '';
+      display: block;
+      width: 21px;
+      height: 21px;
+      background-color: transparent;
+      border: 1px solid #c2c2c2;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      transition: .2s;
+      opacity: 0; }
+  .checkbox-color:checked + label:before {
+    opacity: 1; }
+  .checkbox-color.black + label {
+    background-color: #5c7826; }
+  .checkbox-color.blue + label {
+    background-color: #3b5b72; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.centered-arrow .owl-prev, .centered-arrow .owl-next {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto 0; }
+
+.centered-arrow .owl-prev {
+  left: -27px; }
+
+.centered-arrow .owl-next {
+  right: -27px;
+  -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1); }
+
+.mobile-burger {
+  width: 41px;
+  height: 27px;
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  display: none;
+  float: left;
+  margin-top: 28px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  z-index: 1001;
+  position: relative; }
+  .mobile-burger span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #b69550;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    transition: .25s ease-in-out; }
+    .mobile-burger span:nth-child(1) {
+      top: 0px;
+      -ms-transform-origin: left center;
+          transform-origin: left center; }
+    .mobile-burger span:nth-child(2) {
+      top: 10px;
+      -ms-transform-origin: left center;
+          transform-origin: left center; }
+    .mobile-burger span:nth-child(3) {
+      top: 21px;
+      -ms-transform-origin: left center;
+          transform-origin: left center; }
+  .mobile-burger.open span:nth-child(1) {
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    top: -1px;
+    left: 1px; }
+  .mobile-burger.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0; }
+  .mobile-burger.open span:nth-child(3) {
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    top: 29px;
+    left: 1px; }
+
+@font-face {
+  font-family: 'Muller Regular';
+  src: url("../fonts/MullerRegular.eot?v=4.7.0");
+  src: url("../fonts/MullerRegular.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerRegular.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerRegular.woff?v=4.7.0") format("woff"), url("../fonts/MullerRegular.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerRegular.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Black';
+  src: url("../fonts/MullerBlack.eot?v=4.7.0");
+  src: url("../fonts/MullerBlack.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerBlack.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerBlack.woff?v=4.7.0") format("woff"), url("../fonts/MullerBlack.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerBlack.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Light';
+  src: url("../fonts/MullerLight.eot?v=4.7.0");
+  src: url("../fonts/MullerLight.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerLight.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerLight.woff?v=4.7.0") format("woff"), url("../fonts/MullerLight.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerLight.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Medium';
+  src: url("../fonts/MullerMedium.eot");
+  src: url("../fonts/MullerMedium.woff2") format("woff2"), url("../fonts/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium.ttf") format("truetype"), url("../fonts/MullerMedium.svg#MullerMedium") format("svg"), url("../fonts/MullerMedium.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+.banner.contacts-banner {
+  background: url("../img/banner.jpg") no-repeat top center;
+  background-size: cover; }
+  .banner.contacts-banner .prime-contacts {
+    height: 100vh; }
+    .banner.contacts-banner .prime-contacts h1 {
+      margin: 0.78em 0; }
+
+.map2 {
+  height: 750px; }
+
+section.contacts-page {
+  padding-top: 73px; }
+
+.our-team {
+  padding-bottom: 164px;
+  padding-top: 79px;
+  background: url("../img/services.jpg") no-repeat center/cover; }
+  .our-team h2.title {
+    margin-bottom: 12px; }
+  .our-team p {
+    line-height: 19px;
+    color: #bbbbbb; }
+    .our-team p:after {
+      content: '';
+      display: block;
+      max-width: 215px;
+      width: 100%;
+      height: 1px;
+      background-color: #ac9455;
+      margin: 26px auto 0; }
+  .our-team .our-team-list {
+    padding-top: 68px; }
+    .our-team .our-team-list .col-lg-3 {
+      text-align: center; }
+      .our-team .our-team-list .col-lg-3:hover .photo, .our-team .our-team-list .col-lg-3:focus .photo {
+        border-color: #ac9455; }
+        .our-team .our-team-list .col-lg-3:hover .photo img, .our-team .our-team-list .col-lg-3:focus .photo img {
+          filter: none; }
+        .our-team .our-team-list .col-lg-3:hover .photo:after, .our-team .our-team-list .col-lg-3:focus .photo:after {
+          display: none; }
+      .our-team .our-team-list .col-lg-3 .photo {
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 150px;
+        border: 2px solid transparent;
+        position: relative; }
+        .our-team .our-team-list .col-lg-3 .photo img {
+          filter: grayscale(100%);
+          filter: gray; }
+        .our-team .our-team-list .col-lg-3 .photo:after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: rgba(148, 147, 147, 0.77);
+          position: absolute;
+          top: 0; }
+      .our-team .our-team-list .col-lg-3 .name {
+        font-family: "Muller Medium";
+        color: white;
+        margin-top: 35px;
+        font-size: 17px;
+        letter-spacing: 4.3px;
+        margin-bottom: 19px; }
+      .our-team .our-team-list .col-lg-3 .titul {
+        text-transform: uppercase;
+        color: #ac9455;
+        font-family: "Muller Regular";
+        font-size: 11px;
+        letter-spacing: 1.1px;
+        margin-bottom: 29px; }
+      .our-team .our-team-list .col-lg-3 .info {
+        margin-bottom: 43px;
+        line-height: 24px;
+        color: #bbbbbb; }
+      .our-team .our-team-list .col-lg-3 .in-social a {
+        margin-left: 4px;
+        margin-right: 4px;
+        text-decoration: none; }
+
+.partnership {
+  padding-top: 65px;
+  padding-bottom: 73px; }
+  .partnership .partnership-and-vacancy {
+    padding: 30px;
+    padding-top: 42px;
+    padding-bottom: 72px;
+    background-color: #3f403f;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden; }
+    .partnership .partnership-and-vacancy h3 {
+      font-family: "Muller Black";
+      color: #cccccc;
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 0.3px;
+      margin-bottom: 37px; }
+    .partnership .partnership-and-vacancy p {
+      color: #bbbbbb;
+      line-height: 20px;
+      margin-bottom: 20px; }
+    .partnership .partnership-and-vacancy div {
+      color: #ac9455;
+      font-family: "Muller Light"; }
+      .partnership .partnership-and-vacancy div span {
+        font-family: 'Open Sans', sans-serif;
+        color: #737372;
+        display: block;
+        font-size: 12px; }
+    .partnership .partnership-and-vacancy .contact-info {
+      max-width: 345px;
+      margin: 0 auto; }
+      .partnership .partnership-and-vacancy .contact-info .email {
+        float: left;
+        width: 150px;
+        margin-top: 18px; }
+        .partnership .partnership-and-vacancy .contact-info .email span {
+          letter-spacing: 4px;
+          margin-bottom: 10px; }
+      .partnership .partnership-and-vacancy .contact-info .tel {
+        float: right;
+        width: 150px;
+        margin-top: 18px; }
+        .partnership .partnership-and-vacancy .contact-info .tel span {
+          letter-spacing: 4px;
+          margin-bottom: 10px; }
+  .partnership .vacancy-block h3 {
+    margin-bottom: 36px; }
+  .partnership .vacancy-block div {
+    font-size: 14px;
+    margin-top: 19px; }
+    .partnership .vacancy-block div span {
+      font-size: 14px;
+      color: #bbbbbb;
+      display: inline-block; }
+
+.banner.partners-banner {
+  background: url("../img/partner-banner.jpg") no-repeat top center/cover;
+  height: 100vh; }
+  .banner.partners-banner .prime-partners h1 {
+    margin: 0.78em 0;
+    margin-bottom: 37px; }
+  .banner.partners-banner .prime-partners span {
+    color: #bbbbbb;
+    max-width: 640px;
+    line-height: 20px;
+    display: block;
+    font-size: 16px; }
+
+section.contacts.contacts-partners {
+  padding-bottom: 145px; }
+  section.contacts.contacts-partners .container h2 {
+    margin-top: 52px;
+    margin-bottom: 12px; }
+  section.contacts.contacts-partners .container p {
+    margin-bottom: 48px; }
+  section.contacts.contacts-partners .container .row .contacts-address li:first-child {
+    margin-top: 75px;
+    margin-bottom: 35px; }
+  section.contacts.contacts-partners .container .row .contacts-address li:last-child {
+    margin-top: 34px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif; }
+    section.contacts.contacts-partners .container .row .contacts-address li:last-child:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -4px;
+      background: transparent url(../img/email.png) center center no-repeat;
+      background-size: contain;
+      width: 18px;
+      height: 24px; }
+  section.contacts.contacts-partners .container .row ul.contacts-social {
+    margin: 68px 0 0;
+    padding: 0; }
+
+section.our-dialers {
+  background: url("../img/services.jpg") no-repeat center/cover;
+  padding-top: 96px;
+  padding-bottom: 174px; }
+  section.our-dialers .address-dialers-list {
+    padding-top: 52px;
+    padding-left: 0;
+    list-style: none;
+    font-family: "Muller Regular"; }
+    section.our-dialers .address-dialers-list li > div {
+      padding-left: 30px; }
+    section.our-dialers .address-dialers-list .name-dialer {
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      color: #ac9455;
+      font-weight: 900; }
+    section.our-dialers .address-dialers-list .address-dialer {
+      padding-right: 81px;
+      line-height: 22px;
+      font-size: 18px;
+      margin-top: 38px;
+      margin-bottom: 28px;
+      color: #cccccc;
+      background: url("../img/pin-color.png") no-repeat top left; }
+    section.our-dialers .address-dialers-list .tel-dialer {
+      font-size: 17px;
+      color: #cccccc;
+      background: url("../img/phone-color.png") no-repeat center left; }
+    section.our-dialers .address-dialers-list .email-dialer {
+      color: #737372;
+      background: url("../img/emai-colorl.png") no-repeat top left;
+      margin-top: 36px;
+      font-size: 15px;
+      margin-bottom: 15px; }
+
+section.dark-block-services {
+  background-color: #f2f2f2; }
+
+section.white-block-services, section.dark-block-services {
+  padding-top: 94px;
+  padding-bottom: 72px; }
+  section.white-block-services .container > span, section.dark-block-services .container > span {
+    font-family: "Muller Medium";
+    font-size: 17px;
+    letter-spacing: 6.8px;
+    color: #ac9455;
+    margin-bottom: 43px;
+    display: block; }
+  section.white-block-services .container .col-lg-7 .img-rifle img, section.dark-block-services .container .col-lg-7 .img-rifle img {
+    margin-left: -47px; }
+  section.white-block-services .container .col-lg-5, section.dark-block-services .container .col-lg-5 {
+    padding-left: 0;
+    padding-right: 0; }
+    section.white-block-services .container .col-lg-5 p, section.dark-block-services .container .col-lg-5 p {
+      line-height: 24px;
+      padding-top: 2px;
+      font-size: 15px; }
+      section.white-block-services .container .col-lg-5 p span, section.dark-block-services .container .col-lg-5 p span {
+        font-weight: 600; }
+    section.white-block-services .container .col-lg-5 ul, section.dark-block-services .container .col-lg-5 ul {
+      margin-top: 52px;
+      padding-left: 25px;
+      list-style: none; }
+      section.white-block-services .container .col-lg-5 ul li, section.dark-block-services .container .col-lg-5 ul li {
+        padding-left: 75px;
+        font-family: "Muller Medium";
+        margin-bottom: 50px; }
+        section.white-block-services .container .col-lg-5 ul li .name-upgrade, section.dark-block-services .container .col-lg-5 ul li .name-upgrade {
+          letter-spacing: 1px;
+          color: #ac9455;
+          font-size: 19px;
+          text-transform: uppercase; }
+        section.white-block-services .container .col-lg-5 ul li .info-upgrade, section.dark-block-services .container .col-lg-5 ul li .info-upgrade {
+          color: #9a9ea3;
+          font-family: "Muller Regular";
+          line-height: 25px;
+          font-size: 17px; }
+        section.white-block-services .container .col-lg-5 ul li:first-child, section.dark-block-services .container .col-lg-5 ul li:first-child {
+          background: url("../img/brash.png") no-repeat top 3px left; }
+        section.white-block-services .container .col-lg-5 ul li:nth-child(2), section.dark-block-services .container .col-lg-5 ul li:nth-child(2) {
+          background: url("../img/vector.png") no-repeat top left; }
+        section.white-block-services .container .col-lg-5 ul li:nth-child(3), section.dark-block-services .container .col-lg-5 ul li:nth-child(3) {
+          background: url("../img/sloi.png") no-repeat top left; }
+        section.white-block-services .container .col-lg-5 ul li:nth-child(4), section.dark-block-services .container .col-lg-5 ul li:nth-child(4) {
+          background: url("../img/brash.png") no-repeat top 3px left; }
+    section.white-block-services .container .col-lg-5 .button-services, section.dark-block-services .container .col-lg-5 .button-services {
+      font-family: "Muller Regular";
+      font-weight: 600;
+      color: black;
+      text-decoration: none;
+      padding: 12px 13px 9px 13px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      border: 2px solid #ac9455;
+      border-radius: 11px;
+      text-transform: uppercase; }
+
+section.white-block-services:nth-child(4) {
+  padding-bottom: 128px; }
+  section.white-block-services:nth-child(4) .container .col-lg-7 .img-rifle img {
+    margin-left: -80px; }
+  section.white-block-services:nth-child(4) .container .col-lg-5 > p {
+    padding-right: 19px;
+    margin-top: 10px; }
+  section.white-block-services:nth-child(4) .container .col-lg-5 .button-services {
+    margin-top: 0;
+    display: inline-block; }
+
+section.dark-block-services {
+  padding-bottom: 112px; }
+  section.dark-block-services:nth-child(5) {
+    padding-bottom: 141px; }
+    section.dark-block-services:nth-child(5) .container .col-lg-5 p {
+      margin-bottom: 23px;
+      letter-spacing: 0.299px;
+      padding-right: 4px; }
+    section.dark-block-services:nth-child(5) .container .col-lg-5 .button-services {
+      display: inline-block;
+      margin-top: 34px; }
+    section.dark-block-services:nth-child(5) .col-lg-7 .img-rifle img {
+      position: relative; }
+    section.dark-block-services:nth-child(5) .col-lg-7 .img-rifle span {
+      display: inline-block;
+      font-family: "Muller Medium";
+      color: #ac9455;
+      width: 300px;
+      position: absolute;
+      bottom: -95px;
+      line-height: 21px;
+      padding-left: 69px; }
+    section.dark-block-services:nth-child(5) .col-lg-7 .img-rifle .book {
+      position: absolute;
+      right: -26px;
+      bottom: -236px; }
+  section.dark-block-services .container > span {
+    margin-bottom: 11px; }
+  section.dark-block-services .container .col-lg-7 .img-rifle img {
+    margin-left: -237px; }
+  section.dark-block-services .container .col-lg-5 {
+    padding-left: 15px; }
+    section.dark-block-services .container .col-lg-5 ul li {
+      margin-bottom: 24px;
+      padding-left: 73px; }
+      section.dark-block-services .container .col-lg-5 ul li:last-child {
+        margin-bottom: 75px; }
+      section.dark-block-services .container .col-lg-5 ul li span {
+        line-height: 23px; }
+
+.banner.wiki-article-banner {
+  background: url("../img/wiki-article-banner.jpg") no-repeat top center;
+  background-size: cover;
+  height: 100vh; }
+  .banner.wiki-article-banner .prime-wiki-article {
+    padding-top: 62px; }
+    .banner.wiki-article-banner .prime-wiki-article span {
+      font-family: "Muller Regular";
+      color: #707478;
+      font-size: 33px;
+      letter-spacing: 6px; }
+    .banner.wiki-article-banner .prime-wiki-article h1 {
+      margin-top: 4px;
+      padding-bottom: 10px; }
+
+main.blog-main.wiki-main .container section.with-aside h1 {
+  margin-bottom: 86px; }
+
+main.blog-main.wiki-main .container section.with-aside .article-short-text {
+  font-size: 21px;
+  margin-bottom: 56px; }
+
+main.blog-main.wiki-main .container section.with-aside img {
+  width: 100%;
+  margin-bottom: 62px; }
+
+main.blog-main.wiki-main .container section.with-aside > a {
+  margin-top: 36px;
+  background-color: #ac9455;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  padding: 0 21px;
+  height: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 10px;
+  transition: .2s;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-family: "Muller Regular";
+  margin-bottom: 71px; }
+
+main.blog-main.wiki-main .container section.with-aside .share span {
+  font-family: "Muller Medium";
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px; }
+
+main.blog-main.wiki-main .container section.with-aside .share .social-share {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  main.blog-main.wiki-main .container section.with-aside .share .social-share li {
+    display: inline-block;
+    margin-right: 60px; }
+    main.blog-main.wiki-main .container section.with-aside .share .social-share li a {
+      text-decoration: none;
+      font-size: 23px;
+      color: #cccccc; }
+      main.blog-main.wiki-main .container section.with-aside .share .social-share li a span {
+        font-family: "Muller Medium";
+        padding: 7px 6px 6px 12px;
+        float: right;
+        display: block;
+        font-size: 12px;
+        padding-left: 15px; }
+    main.blog-main.wiki-main .container section.with-aside .share .social-share li a.active {
+      color: #ac9455; }
+
+main.blog-main.wiki-main .container .aside {
+  padding-top: 84px; }
+  main.blog-main.wiki-main .container .aside .aside-item {
+    margin-bottom: 59px; }
+    main.blog-main.wiki-main .container .aside .aside-item:nth-child(3) {
+      margin-bottom: 31px; }
+    main.blog-main.wiki-main .container .aside .aside-item:nth-child(4) {
+      margin-bottom: 72px; }
+    main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters {
+      padding-left: 0; }
+      main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters li, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters li {
+        display: inline-block;
+        margin-bottom: 6px;
+        margin-right: 13px; }
+        main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters li a, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters li a {
+          color: #ac9455;
+          text-decoration: none;
+          font-family: "Muller Medium"; }
+          main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters li a:hover, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters li a:hover, main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters li a:focus, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters li a:focus {
+            text-decoration: underline; }
+  main.blog-main.wiki-main .container .aside .aside-social {
+    margin-bottom: 155px;
+    padding-left: 0;
+    list-style: none; }
+
+.banner.wiki-list-banner {
+  background: url("../img/partner-banner.jpg") no-repeat top center/cover;
+  height: 100vh; }
+  .banner.wiki-list-banner .prime-partners h1 {
+    margin: 0.78em 0;
+    margin-bottom: 68px;
+    letter-spacing: 1px; }
+  .banner.wiki-list-banner .prime-partners span {
+    color: #bbbbbb;
+    max-width: 640px;
+    line-height: 20px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 28px; }
+  .banner.wiki-list-banner .prime-partners .button-color {
+    margin-top: 0;
+    background-color: #ac9455;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 0 21px;
+    height: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    transition: .2s;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-family: "Muller Regular";
+    margin-bottom: 71px; }
+
+main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters {
+  padding-left: 0; }
+  main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters li, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters li {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-right: 13px; }
+    main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters li a, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters li a {
+      color: #ac9455;
+      text-decoration: none;
+      font-family: "Muller Medium"; }
+      main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters li a:hover, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters li a:hover, main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters li a:focus, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters li a:focus {
+        text-decoration: underline; }
+
+main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters {
+  margin-top: 8px;
+  margin-bottom: 16px; }
+
+main.blog-main.wiki-main.wiki-main-list .container .aside {
+  padding-top: 0; }
+
+main.blog-main.wiki-main.wiki-main-list .container .wiki-lists form {
+  float: right; }
+
+main.blog-main.wiki-main.wiki-main-list .container .wiki-lists .col-lg-1 span {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: #ac9455;
+  font-size: 55px;
+  line-height: 48px; }
+
+main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 {
+  list-style: none;
+  margin-top: 7px;
+  margin-bottom: 30px; }
+  main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 li {
+    margin-bottom: 16px;
+    padding-right: 30px; }
+    main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 li a {
+      display: block;
+      text-decoration: none;
+      outline: none;
+      font-size: 14px;
+      color: #9a9ea3;
+      transition: .2s;
+      position: relative; }
+      main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 li a:hover, main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 li a:focus {
+        text-decoration: underline; }
+
+section.achievements.achievements-about {
+  background: initial;
+  padding-bottom: 66px;
+  padding-top: 96px; }
+  section.achievements.achievements-about .achievements-title {
+    color: black; }
+  section.achievements.achievements-about .achievements-text {
+    line-height: 149%;
+    padding-left: 22px;
+    padding-right: 23px; }
+
+.banner.banner-about {
+  background: url("../img/banner-about.jpg") no-repeat center/cover; }
+  .banner.banner-about .main-carousel-outer .main-carousel-title {
+    margin-bottom: 40px;
+    margin-top: 4px; }
+
+section.achievements.awards-about {
+  background: initial;
+  padding-top: 62px;
+  padding-bottom: 36px; }
+  section.achievements.awards-about .achievements-title {
+    color: black; }
+
+section.slider-adout .container-fluid {
+  padding-left: 73px;
+  padding-right: 73px;
+  background: url("../img/partner-banner.jpg") no-repeat center/cover; }
+  section.slider-adout .container-fluid .owl-dots {
+    display: none; }
+  section.slider-adout .container-fluid .owl-nav {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 9; }
+    section.slider-adout .container-fluid .owl-nav .owl-prev {
+      position: absolute;
+      left: -53px !important; }
+    section.slider-adout .container-fluid .owl-nav .owl-next {
+      position: absolute;
+      right: -53px !important; }
+
+section.our-history {
+  background: url("../img/our-history.jpg") no-repeat center/cover;
+  padding-top: 69px;
+  padding-bottom: 146px; }
+  section.our-history .history-in-years {
+    padding-top: 132px;
+    background: url("../img/dots.png") no-repeat top 40px left 475px; }
+    section.our-history .history-in-years .row:first-child .col-md-7 .history-text:before {
+      content: "2005"; }
+    section.our-history .history-in-years .row:nth-child(2) .col-md-7 .history-text:before {
+      content: "Июнь 2005"; }
+    section.our-history .history-in-years .row:nth-child(3) .col-md-7 .history-text:before {
+      content: "2010"; }
+    section.our-history .history-in-years .row:nth-child(4) .col-md-7 .history-text:before {
+      content: "21 Июля 2015"; }
+    section.our-history .history-in-years .col-md-4 {
+      overflow: hidden;
+      margin-bottom: 12px;
+      margin-top: 15px; }
+    section.our-history .history-in-years .col-md-7 {
+      padding-left: 125px; }
+      section.our-history .history-in-years .col-md-7 .history-text.active:after {
+        left: -20px;
+        top: 15px;
+        color: #ac9455;
+        font-size: 65px; }
+      section.our-history .history-in-years .col-md-7 .history-text {
+        padding-top: 39px;
+        font-family: "Muller Regular";
+        font-weight: 700;
+        color: white;
+        max-width: 410px;
+        line-height: 20px;
+        font-size: 15px;
+        padding-left: 42px;
+        position: relative; }
+        section.our-history .history-in-years .col-md-7 .history-text:after {
+          content: '.';
+          position: absolute;
+          left: -18px;
+          top: 17px;
+          font-size: 41px;
+          color: #7d888a; }
+        section.our-history .history-in-years .col-md-7 .history-text:before {
+          content: "2005";
+          width: 75px;
+          position: absolute;
+          left: -115px;
+          font-size: 9px;
+          font-family: "Muller Regular";
+          text-align: right;
+          color: #b1b1b0;
+          top: 26px; }
+      section.our-history .history-in-years .col-md-7 p {
+        font-family: 'Montserrat';
+        padding-left: 42px;
+        color: #b1b1b0;
+        font-size: 12px;
+        margin-top: 4px;
+        line-height: 19px; }
+
+div i {
+  display: inline-block;
+  margin: 0 10px; }
+
+.search {
+  background-color: #000;
+  display: none;
+  position: relative; }
+
+.search input {
+  position: absolute;
+  padding-left: 20px;
+  right: 0;
+  z-index: 9;
+  border: 1px solid;
+  width: 305px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgba(63, 64, 63, 0.9);
+  color: #ac9455;
+  outline: none;
+  cursor: pointer; }
+
+.search-icon {
+  cursor: pointer; }
+
+body {
+  background-color: #fff;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.page {
+  overflow: hidden; }
+
+.banner {
+  background: transparent url(../img/banner.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh; }
+
+.header {
+  background-color: rgba(63, 64, 63, 0.9);
+  font-size: 0;
+  padding: 50px 0 25px; }
+  .header-logo {
+    max-width: 283px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle; }
+    .header-logo img {
+      width: 100%; }
+  .header-menu {
+    margin: 10px 53px 0 0;
+    padding: 0;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle; }
+    .header-menu > li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 40px; }
+      .header-menu > li:last-child {
+        margin-right: 0; }
+      .header-menu > li.with-dropdown a {
+        position: relative; }
+        .header-menu > li.with-dropdown a:after {
+          content: '';
+          display: block;
+          width: 6px;
+          height: 4px;
+          background: transparent url(../img/dropdown-arrow.svg) center center no-repeat;
+          background-size: contain;
+          position: absolute;
+          right: -9px;
+          top: calc(50% - 3px);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .header-menu a {
+      display: block;
+      outline: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Muller Regular";
+      font-size: 12px;
+      color: #ac9455;
+      transition: .2s;
+      border-bottom: 1px solid transparent;
+      letter-spacing: 2px;
+      padding-bottom: 5px; }
+      .header-menu a.active {
+        color: #737372;
+        border-bottom-color: #ac9455; }
+      .header-menu a:hover, .header-menu a:focus {
+        color: #737372; }
+  .header-nav-inner {
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 283px); }
+  .header-search {
+    width: 12px;
+    height: 12px;
+    background: transparent url(../img/search.png) center center no-repeat;
+    background-size: contain;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle; }
+
+.main-carousel-outer {
+  padding-top: 50px;
+  padding-bottom: 130px;
+  position: relative; }
+
+.main-carousel-title {
+  padding-bottom: 5px;
+  overflow: hidden;
+  padding-left: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 72px;
+  color: #ac9455;
+  line-height: 1;
+  display: block;
+  margin-bottom: 98px; }
+
+.main-carousel-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #cccccc; }
+
+.main-carousel .button {
+  margin-top: 28px; }
+
+.main-carousel-controls {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  z-index: 100; }
+
+.about-arms {
+  padding-top: 72px;
+  padding-bottom: 45px; }
+  .about-arms-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-top: 0;
+    color: #ac9455;
+    font-size: 55px;
+    line-height: 1;
+    margin-bottom: 28px; }
+  .about-arms-short {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-family: "Muller Regular";
+    font-size: 22px;
+    color: #9a9ea3;
+    line-height: 1.2; }
+  .about-arms-text {
+    font-size: 16px;
+    color: #3f403f;
+    margin-top: 0;
+    margin-bottom: 26px;
+    line-height: 1.5; }
+    .about-arms-text-color {
+      color: #ac9455; }
+  .about-arms-item {
+    position: relative; }
+  .about-arms-picture {
+    position: relative;
+    z-index: 1; }
+  .about-arms-name {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    text-align: right; }
+  .about-arms-type {
+    font-family: "Muller Regular";
+    font-size: 17px;
+    color: #ac9455;
+    display: block;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    line-height: 1.2; }
+  .about-arms-model {
+    display: block;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #2b2b2b;
+    font-family: "Muller Light";
+    margin-top: 6px; }
+  .about-arms .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+
+.achievements {
+  background: transparent url(../img/achievements.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 79px;
+  padding-bottom: 115px; }
+  .achievements .title-description {
+    margin-bottom: 60px; }
+  .achievements-item {
+    margin-bottom: 30px;
+    text-align: center; }
+    .achievements-item.ai1 .achievements-title:before {
+      background-image: url(../img/achievements-1.svg);
+      width: 67px;
+      height: 67px; }
+    .achievements-item.ai2 .achievements-title:before {
+      background-image: url(../img/achievements-2.svg);
+      width: 67px;
+      height: 67px; }
+    .achievements-item.ai3 .achievements-title:before {
+      background-image: url(../img/achievements-3.svg);
+      width: 67px;
+      height: 67px; }
+  .achievements-title {
+    font-family: "Muller Light";
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 5px; }
+    .achievements-title:before {
+      content: '';
+      display: block;
+      background-color: transparent;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      margin: 0 auto 38px; }
+  .achievements-text {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #898989;
+    line-height: 1.5; }
+
+.services {
+  background: transparent url(../img/services.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 77px;
+  padding-bottom: 110px; }
+  .services .title-description {
+    margin-bottom: 80px; }
+  .services-item {
+    display: block;
+    text-decoration: none;
+    outline: none; }
+    .services-item:hover .services-picture, .services-item:focus .services-picture {
+      filter: grayscale(0);
+      filter: none; }
+      .services-item:hover .services-picture-inner:before, .services-item:hover .services-picture .button, .services-item:focus .services-picture-inner:before, .services-item:focus .services-picture .button {
+        opacity: 1; }
+    .services-item:hover .services-title, .services-item:focus .services-title {
+      color: #ccc; }
+  .services-picture {
+    width: 100%;
+    width: 250px;
+    height: 250px;
+    filter: grayscale(100%);
+    filter: gray;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: .2s; }
+    .services-picture-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 50%; }
+      .services-picture-inner:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(172, 148, 85, 0.7);
+        z-index: 10;
+        transition: .2s;
+        opacity: 0; }
+    .services-picture:after {
+      content: '';
+      display: block;
+      width: calc(100% + 18px);
+      height: calc(100% + 18px);
+      background-color: transparent;
+      pointer-events: none;
+      border: 3px solid #d9d9d9;
+      position: absolute;
+      left: -9px;
+      top: -9px;
+      border-radius: 50%; }
+    .services-picture img {
+      position: relative;
+      left: 50%;
+      top: 50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+    .services-picture .button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      z-index: 10;
+      opacity: 0;
+      transition: .2s; }
+  .services-title {
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: "Muller Regular";
+    font-size: 14px;
+    color: #ac9455;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    display: block;
+    font-family: "Muller Medium";
+    transition: .2s;
+    line-height: 1.3; }
+
+.presentation {
+  padding-top: 90px;
+  padding-bottom: 80px; }
+  .presentation .owl-prev {
+    left: -27px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto 0;
+    width: 20px;
+    height: 35px; }
+  .presentation .owl-next {
+    right: -27px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto 0;
+    width: 20px;
+    height: 35px;
+    -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1); }
+  .presentation-content {
+    max-width: 43%;
+    float: left;
+    padding-left: 20px; }
+  .presentation-graphic {
+    width: 57%;
+    float: right;
+    padding-left: 20px;
+    position: relative;
+    padding-bottom: 110px; }
+  .presentation-name {
+    font-family: "Playfair Display", serif;
+    font-weight: 900; }
+    .presentation-name-first {
+      display: block;
+      font-size: 126px;
+      color: #3f403f; }
+      .presentation-name-first:before {
+        content: '«';
+        font-size: 44px;
+        color: #3f403f;
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 15px; }
+      .presentation-name-first:after {
+        content: '»';
+        font-size: 44px;
+        color: #3f403f;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 15px; }
+    .presentation-name-second {
+      display: block;
+      font-size: 244px;
+      color: #ac9455;
+      text-align: center;
+      margin-top: -60px; }
+    .presentation-name-third {
+      font-size: 221px;
+      display: block;
+      color: #ac9455;
+      margin-top: -85px; }
+    .presentation-name .m {
+      font-size: 43px; }
+  .presentation-type {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-family: "Muller Medium";
+    text-transform: uppercase;
+    color: #ac9455;
+    font-size: 17px;
+    letter-spacing: 5px;
+    max-width: 420px;
+    line-height: 1.3; }
+  .presentation-label {
+    margin-top: 0;
+    margin-bottom: 55px;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 45px;
+    color: #3f403f;
+    max-width: 460px;
+    line-height: 1; }
+  .presentation-text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #3f403f;
+    margin-bottom: 22px;
+    line-height: 1.5; }
+    .presentation-text-color {
+      color: #ac9455; }
+  .presentation .button {
+    margin-top: 40px; }
+  .presentation-picture {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.tabs-caption {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  border-bottom: 1px solid #e9e9e9; }
+  .tabs-caption li {
+    display: inline-block;
+    list-style: none;
+    font-family: "Muller Medium";
+    color: #9a9ea3;
+    font-size: 12px;
+    transition: .2s;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    padding-right: 30px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 15px;
+    margin-bottom: -1px; }
+    .tabs-caption li:hover, .tabs-caption li:focus {
+      color: #ac9455; }
+    .tabs-caption li.active {
+      color: #ac9455;
+      border-bottom-color: #b8a573; }
+
+.tabs-content {
+  padding-top: 25px; }
+
+.presentation-dark {
+  background: transparent url(../img/presentation-dark.jpg) center center no-repeat;
+  background-size: cover; }
+  .presentation-dark .presentation-graphic {
+    float: left;
+    padding-left: 0;
+    padding-right: 20px; }
+  .presentation-dark .presentation-label {
+    color: #707478; }
+  .presentation-dark .presentation-text {
+    color: #f2f2f2; }
+    .presentation-dark .presentation-text-color {
+      color: #ac9455; }
+  .presentation-dark .presentation-content {
+    float: right;
+    padding-right: 0; }
+    .presentation-dark .presentation-content .button {
+      color: #fff; }
+    .presentation-dark .presentation-content .tabs {
+      max-width: 440px; }
+  .presentation-dark .presentation-name-first {
+    color: #707478;
+    font-size: 126px;
+    margin-top: -60px; }
+  .presentation-dark .presentation-name-second {
+    text-align: left;
+    color: #ac9455;
+    font-size: 198px;
+    margin-top: -41px; }
+  .presentation-dark .presentation-name-third {
+    text-align: right;
+    color: #ac9455;
+    font-size: 259px;
+    margin-top: -130px; }
+
+.short-blog-inner {
+  position: relative;
+  padding-top: 49px; }
+
+.short-blog .title-description {
+  margin-bottom: 52px; }
+
+.short-blog-archive {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  color: #ac9455;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .short-blog-archive:hover, .short-blog-archive:focus {
+    text-decoration: none; }
+
+.short-blog-item {
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  transition: .2s;
+  margin-bottom: 30px;
+  padding: 25px; }
+  .short-blog-item:hover, .short-blog-item:focus {
+    background-color: #3f403f; }
+    .short-blog-item:hover .button, .short-blog-item:focus .button {
+      color: #ccc; }
+    .short-blog-item:hover .short-blog-title, .short-blog-item:hover .short-blog-description, .short-blog-item:focus .short-blog-title, .short-blog-item:focus .short-blog-description {
+      color: #ccc; }
+
+.short-blog-picture {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 26px; }
+
+.short-blog-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Muller Black";
+  font-weight: 400;
+  font-size: 20px;
+  color: #707478;
+  min-height: 90px;
+  transition: .2s; }
+
+.short-blog-date {
+  display: block;
+  font-family: "Muller Light";
+  font-size: 14px;
+  color: #ac9455; }
+
+.short-blog-description {
+  font-size: 14px;
+  color: #707478;
+  margin-top: 8px;
+  margin-bottom: 0;
+  min-height: 153px;
+  transition: .2s; }
+
+.map {
+  height: 270px; }
+
+.contacts {
+  padding-top: 45px;
+  padding-bottom: 80px;
+  background-color: #f2f2f2; }
+  .contacts .title {
+    margin-bottom: 20px; }
+  .contacts-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #898989; }
+    .contacts-text:after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 1px;
+      background-color: #d4d4d4;
+      margin-top: 28px; }
+  .contacts-address {
+    margin: 38px 0 0;
+    padding: 0; }
+    .contacts-address li {
+      display: block;
+      list-style: none;
+      color: #707478;
+      position: relative;
+      padding-left: 30px;
+      line-height: 1.2; }
+      .contacts-address li:first-child {
+        font-size: 18px;
+        font-family: "Playfair Display", serif;
+        font-weight: 900;
+        margin-bottom: 20px; }
+        .contacts-address li:first-child:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -2px;
+          background: transparent url(../img/pin.png) center center no-repeat;
+          background-size: contain;
+          width: 18px;
+          height: 24px; }
+      .contacts-address li:nth-child(2) {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif; }
+        .contacts-address li:nth-child(2):before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -4px;
+          background: transparent url(../img/phone.png) center center no-repeat;
+          background-size: contain;
+          width: 18px;
+          height: 24px; }
+  .contacts-social {
+    margin: 60px 0 0;
+    padding: 0; }
+    .contacts-social li {
+      display: inline-block;
+      list-style: none;
+      vertical-align: middle;
+      margin-right: 25px; }
+    .contacts-social a {
+      display: block;
+      outline: none;
+      text-decoration: none; }
+  .contacts-form-inputs {
+    overflow: hidden;
+    clear: both; }
+    .contacts-form-inputs .input-text:first-child {
+      width: 48%;
+      float: left; }
+    .contacts-form-inputs .input-text:last-child {
+      width: 48%;
+      float: right; }
+  .contacts-form-notice {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    color: #898989;
+    padding-left: 15px;
+    margin-top: 16px; }
+    .contacts-form-notice:before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: #ac9455;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto 0; }
+  .contacts-form .button {
+    margin-top: 40px; }
+  .contacts .area-text:after{
+  content: '';
+  display: block;
+  clear: both; }
+  .contacts .area-text {
+    clear: both;
+    margin-top: 20px; }
+
+.bmenu-outer {
+  background-color: #2b2b2b;
+  padding-top: 66px;
+  padding-bottom: 11px; }
+
+.bmenu-logo {
+  max-width: 283px;
+  margin: 0 auto 52px;
+  display: block; }
+  .bmenu-logo img {
+    widows: 100%; }
+
+.bmenu-menu {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center; }
+  .bmenu-menu > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px 15px; }
+    .bmenu-menu > li.with-dropdown a {
+      position: relative; }
+      .bmenu-menu > li.with-dropdown a:after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 4px;
+        background: transparent url(../img/dropdown-arrow.svg) center center no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: -9px;
+        top: calc(50% - 3px);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .bmenu-menu a {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Muller Regular";
+    font-size: 12px;
+    color: #ac9455;
+    transition: .2s;
+    border-bottom: 1px solid transparent;
+    letter-spacing: 2px;
+    padding-bottom: 5px; }
+    .bmenu-menu a.active {
+      color: #737372;
+      border-bottom-color: #ac9455; }
+    .bmenu-menu a:hover, .bmenu-menu a:focus {
+      color: #737372; }
+
+.footer {
+  background-color: #242424;
+  padding-top: 80px; }
+  .footer-title {
+    display: block;
+    font-family: "Muller Medium";
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #4f4f4f;
+    letter-spacing: 3px;
+    margin-bottom: 25px; }
+  .footer-item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 270px;
+    padding: 0 20px;
+    text-align: left;
+    margin-bottom: 50px; }
+    .footer-item-wrapper {
+      text-align: center;
+      margin: 0 -20px;
+      font-size: 0; }
+  .footer-menu {
+    margin: 0;
+    padding: 0; }
+    .footer-menu li {
+      display: block;
+      list-style: none;
+      margin-bottom: 16px; }
+      .footer-menu li:last-child {
+        margin-bottom: 0; }
+    .footer-menu a {
+      display: block;
+      text-decoration: none;
+      outline: none;
+      font-size: 13px;
+      color: #4a4c4b;
+      transition: .2s;
+      position: relative; }
+      .footer-menu a.current-lang {
+        color: #ac9455; }
+        .footer-menu a.current-lang:before {
+          content: '';
+          display: block;
+          width: 4px;
+          height: 4px;
+          background-color: #ac9455;
+          border-radius: 50%;
+          position: absolute;
+          left: -10px;
+          top: 0;
+          bottom: 0;
+          margin: auto 0; }
+      .footer-menu a:hover, .footer-menu a:focus {
+        color: #ac9455; }
+  .footer-social {
+    margin-top: 35px;
+    padding: 30px 0;
+    border-top: 1px solid #1f1f1f;
+    border-bottom: 1px solid #1f1f1f; }
+    .footer-social-list {
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      text-align: center; }
+    .footer-social li {
+      display: inline-block;
+      list-style: none;
+      vertical-align: middle;
+      width: 14%; }
+    .footer-social path {
+      transition: .2s; }
+    .footer-social a {
+      display: block; }
+      .footer-social a:hover path, .footer-social a:focus path {
+        fill: #ac9455; }
+  .footer-copyright {
+    display: block;
+    font-family: "Muller Regular";
+    font-size: 10px;
+    color: #404040;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 40px 0 35px; }
+
+.about-prod {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .about-prod-graphic {
+    width: 57%;
+    position: relative;
+    padding-bottom: 110px;
+    float: left;
+    padding-right: 20px; }
+  .about-prod-name {
+    font-family: "Playfair Display", serif;
+    font-weight: 900; }
+    .about-prod-name-first {
+      display: block;
+      color: #3f403f;
+      font-size: 126px;
+      margin-top: -60px; }
+      .about-prod-name-first:before {
+        content: '«';
+        font-size: 44px;
+        color: #3f403f;
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 15px; }
+      .about-prod-name-first:after {
+        content: '»';
+        font-size: 44px;
+        color: #3f403f;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 15px; }
+    .about-prod-name-second {
+      display: block;
+      text-align: left;
+      color: #ac9455;
+      font-size: 198px;
+      margin-top: -41px; }
+    .about-prod-name-third {
+      display: block;
+      text-align: right;
+      color: #ac9455;
+      font-size: 259px;
+      margin-top: -130px; }
+    .about-prod-name .m {
+      font-size: 43px; }
+  .about-prod-picture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 15px; }
+  .about-prod-type {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-family: "Muller Medium";
+    text-transform: uppercase;
+    color: #ac9455;
+    font-size: 17px;
+    letter-spacing: 5px;
+    max-width: 420px;
+    line-height: 1.3; }
+  .about-prod-content {
+    width: 43%;
+    float: right; }
+  .about-prod-title {
+    font-family: "Playfair Display", serif;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 45px;
+    color: #3f403f;
+    font-weight: 900; }
+  .about-prod-text {
+    font-size: 16px;
+    color: #3f403f;
+    margin-top: 0;
+    margin-bottom: 26px;
+    line-height: 1.5; }
+    .about-prod-text-color {
+      color: #ac9455; }
+
+.item-carousel .owl-stage-outer {
+  overflow: initial; }
+
+.item-carousel-outer {
+  overflow: hidden; }
+
+.item-carousel-picture {
+  height: 250px;
+  overflow: hidden;
+  filter: grayscale(100%);
+  filter: gray;
+  position: relative;
+  transition: .2s; }
+  .item-carousel-picture img {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    z-index: 1; }
+  .item-carousel-picture:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+    transition: .2s;
+    z-index: 2; }
+
+.item-carousel .owl-item.center .item-carousel-picture {
+  filter: none; }
+  .item-carousel .owl-item.center .item-carousel-picture:before {
+    opacity: 0; }
+
+.item-carousel .owl-prev, .item-carousel .owl-next {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto 0;
+  background: transparent url(../img/arrow-orange.svg) center center no-repeat; }
+
+.item-carousel .owl-prev {
+  left: -27px; }
+
+.item-carousel .owl-next {
+  right: -27px;
+  -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1); }
+
+.video {
+  font-size: 0;
+  height: 100%;
+  position: relative; }
+  .video iframe {
+    width: 100%;
+    height: 100%; }
+
+.prod-info {
+  background: transparent url(../img/prod-info.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 75px;
+  padding-bottom: 110px; }
+  .prod-info-content {
+    width: 40%;
+    float: left;
+    padding-right: 80px; }
+  .prod-info-type {
+    font-family: "Muller Medium";
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    display: block; }
+  .prod-info-name {
+    margin-top: 3px;
+    margin-bottom: 43px;
+    display: block;
+    font-family: "Muller Black";
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase; }
+  .prod-info-subtitle {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Muller Medium";
+    font-size: 14px;
+    color: #f2f2f2;
+    margin-bottom: 12px; }
+  .prod-info-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #9a9ea3;
+    line-height: 1.5; }
+  .prod-info-caption {
+    display: block;
+    color: #ac9455;
+    text-transform: uppercase;
+    font-family: "Muller Medium";
+    letter-spacing: 3px;
+    font-size: 14px; }
+  .prod-info-list {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 12%; }
+    .prod-info-list li {
+      display: block;
+      list-style: none;
+      margin-bottom: 51px; }
+      .prod-info-list li:last-child {
+        margin-bottom: 0; }
+  .prod-info-main-list {
+    width: 35%;
+    float: left;
+    padding-right: 40px; }
+    .prod-info-main-list li {
+      margin-bottom: 44px; }
+    .prod-info-main-list-value {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: "Muller Regular";
+      font-size: 22px;
+      color: #737372;
+      margin-top: 10px; }
+      .prod-info-main-list-value span {
+        font-family: "Muller Black";
+        color: #cccccc; }
+  .prod-info-value {
+    display: block;
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 12px; }
+
+.product {
+  padding-top: 65px;
+  padding-bottom: 55px;
+  background-color: #f2f2f2; }
+  .product-el {
+    margin-top: 11px;
+    margin-bottom: 36px; }
+    .product-el:last-child {
+      margin-bottom: 0; }
+    .product-el-title {
+      font-family: "Muller Regular";
+      display: block;
+      margin-top: 0;
+      margin-bottom: 13px;
+      font-size: 12px;
+      color: #2b2b2b;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .product-el label {
+      margin-right: 12px; }
+    .product-el.align-right label {
+      margin-right: 0;
+      margin-left: 12px; }
+  .product-title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-family: "Muller Regular";
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #2b2b2b;
+    letter-spacing: 8px;
+    font-weight: 400; }
+    .product-title span {
+      font-family: "Muller Medium"; }
+  .product-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #898989;
+    line-height: 1.4; }
+  .product-main-control {
+    float: right;
+    text-align: right;
+    margin-top: 140px;
+    width: 30%; }
+  .product-in-stock {
+    display: inline-block;
+    font-family: "Muller Regular";
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #ac9455;
+    letter-spacing: 1px;
+    position: relative; }
+    .product-in-stock:before {
+      content: '';
+      display: block;
+      background: transparent url(../img/checkmark.svg) center center no-repeat;
+      width: 14px;
+      height: 17px;
+      position: absolute;
+      left: -22px;
+      top: -6px;
+      background-size: contain; }
+  .product-price {
+    display: block;
+    font-family: "Muller Regular";
+    font-size: 40px;
+    color: #2b2b2b;
+    margin-top: 15px; }
+  .product-link {
+    margin-top: 25px;
+    font-family: "Muller Regular";
+    font-size: 11px;
+    color: #ac9455;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block; }
+    .product-link:hover, .product-link:focus {
+      text-decoration: none; }
+  .product-picture {
+    float: left;
+    width: 70%; }
+  .product-carousel-title {
+    padding-top: 2px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "Muller Regular";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #898989;
+    position: relative; }
+    .product-carousel-title:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e0e0e0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      z-index: 1; }
+    .product-carousel-title span {
+      display: inline-block;
+      padding: 0 14px;
+      background-color: #f2f2f2;
+      position: relative;
+      z-index: 2; }
+  .product-carousel-name {
+    display: block;
+    float: left;
+    font-family: "Muller Regular";
+    font-size: 12px;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-bottom: 0; }
+    .product-carousel-name span {
+      font-family: "Muller Medium"; }
+  .product-carousel-item {
+    display: block;
+    text-decoration: none;
+    outline: none; }
+  .product-carousel-price-outer {
+    float: right;
+    margin-bottom: 5px; }
+    .product-carousel-price-outer img {
+      max-width: 8px;
+      display: inline-block !important; }
+    .product-carousel-price-outer .product-price {
+      font-size: 20px;
+      margin-top: 5px; }
+  .product-carousel-picture img {
+    max-width: 100%; }
+
+.blog-main {
+  margin-top: 78px;
+  margin-bottom: 80px; }
+
+.article-banner {
+  background-image: none; }
+  .article-banner .header {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%; }
+
+.article-carousel-picture {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.with-aside {
+  width: 74%;
+  float: left; }
+
+.article-author {
+  display: inline-block;
+  font-family: "Muller Medium";
+  font-size: 18px;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-right: 40px; }
+
+.article-date {
+  display: inline-block;
+  font-size: 11px;
+  color: #a6a6a6; }
+
+.article-title {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 30px; }
+
+.article-short-text {
+  margin-top: 0;
+  margin-bottom: 46px;
+  font-size: 22px;
+  color: #9a9ea3; }
+
+.article-text {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 16px;
+  color: #3f403f;
+  line-height: 1.4; }
+
+.article-video {
+  font-size: 0;
+  margin-top: 57px;
+  margin-bottom: 37px; }
+  .article-video iframe {
+    width: 100%;
+    height: 440px; }
+
+.article .tags {
+  margin: 52px 0 0; }
+
+.tags {
+  margin: 0;
+  padding: 0;
+  font-size: 0; }
+  .tags li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+    .tags li:last-child {
+      margin-right: 0; }
+  .tags a {
+    display: block;
+    font-size: 11px;
+    color: #2b2b2b;
+    padding: 0 15px;
+    height: 25px;
+    line-height: 23px;
+    border: 1px solid #d8d8d8;
+    border-radius: 27px;
+    text-decoration: none;
+    outline: none;
+    position: relative; }
+    .tags a.active:before {
+      opacity: 1; }
+    .tags a:before {
+      content: '';
+      display: block;
+      width: calc(100% + 2px);
+      height: 27px;
+      border: 2px solid #ac9455;
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      border-radius: 27px;
+      transition: .2s;
+      opacity: 0; }
+
+.aside {
+  overflow: hidden;
+  padding-left: 95px; }
+  .aside-item {
+    margin-bottom: 65px; }
+  .aside-social {
+    margin: 0 0 62px;
+    padding: 0;
+    font-size: 0; }
+    .aside-social li {
+      display: inline-block;
+      margin-right: 30px; }
+      .aside-social li:last-child {
+        margin-right: 0; }
+    .aside-social a {
+      font-size: 21px;
+      color: #a6a6a6;
+      text-decoration: none;
+      outline: none; }
+  .aside-title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-family: "Muller Medium";
+    font-size: 14px;
+    color: #ac9455;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .aside-rubrics {
+    margin: 0;
+    padding: 0; }
+    .aside-rubrics li {
+      display: block;
+      list-style: none;
+      margin-bottom: 8px; }
+      .aside-rubrics li:last-child {
+        margin-bottom: 0; }
+    .aside-rubrics a {
+      text-decoration: none;
+      outline: none;
+      font-size: 14px;
+      color: #9a9ea3; }
+      .aside-rubrics a:hover, .aside-rubrics a:focus {
+        text-decoration: underline; }
+  .aside-another {
+    margin: 0;
+    padding: 0; }
+    .aside-another li {
+      display: block;
+      list-style: none;
+      margin-bottom: 33px; }
+      .aside-another li:last-child {
+        margin-bottom: 0; }
+    .aside-another span {
+      display: block;
+      font-family: "Muller Light";
+      font-size: 12px;
+      color: #9a9ea3;
+      letter-spacing: 1px;
+      margin-bottom: 5px; }
+    .aside-another a {
+      display: block;
+      text-decoration: none;
+      outline: none;
+      font-family: "Muller Medium";
+      font-size: 14px;
+      color: #707478;
+      line-height: 1.5; }
+      .aside-another a:hover, .aside-another a:focus {
+        text-decoration: underline; }
+  .aside .input-text {
+    background-color: #e5e5e5; }
+  .aside .button {
+    margin-top: 27px; }
+
+.comments {
+  background-color: #f2f2f2;
+  padding-top: 75px;
+  padding-bottom: 110px; }
+  .comments-title {
+    display: block;
+    font-family: "Muller Medium";
+    font-size: 13px;
+    color: #444444;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1px; }
+    .comments-title:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 2px;
+      background-color: #707478;
+      margin: 9px auto 0; }
+  .comments-list {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    clear: both; }
+    .comments-list li {
+      display: block;
+      list-style: none;
+      overflow: hidden;
+      border-bottom: 1px dashed #cccccc;
+      padding: 38px 0 32px; }
+      .comments-list li .comments-list li {
+        padding-left: 44px; }
+        .comments-list li .comments-list li:first-child {
+          margin-top: 32px;
+          border-top: 1px dashed #cccccc; }
+        .comments-list li .comments-list li:last-child {
+          border-bottom: 0;
+          padding-bottom: 0; }
+  .comments-picture {
+    display: block;
+    width: 65px;
+    height: 65px;
+    float: left; }
+    .comments-picture img {
+      position: relative;
+      width: 100%;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  .comments-content {
+    padding-left: 25px;
+    padding-right: 95px;
+    width: calc(100% - 65px - 190px);
+    float: left;
+    padding-top: 3px; }
+  .comments-control {
+    width: 190px;
+    float: left;
+    padding-top: 5px; }
+    .comments-control a {
+      text-decoration: none;
+      outline: none;
+      display: block;
+      font-family: "Muller Regular";
+      font-size: 14px;
+      color: #989898;
+      margin-bottom: 2px; }
+      .comments-control a:hover, .comments-control a:focus {
+        text-decoration: underline; }
+  .comments-name {
+    font-family: "Muller Medium";
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #444444;
+    letter-spacing: 1px;
+    margin-right: 11px; }
+  .comments-date {
+    display: inline-block;
+    font-size: 12px;
+    color: #9a9ea3; }
+  .comments-body {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #707478;
+    line-height: 1.7; }
+  .comments-form {
+    margin-top: 52px; }
+    .comments-form-title {
+      display: block;
+      font-family: "Muller Medium";
+      font-size: 13px;
+      color: #444444;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 25px; }
+    .comments-form .input-text input, .comments-form .area-text textarea {
+      background-color: #e5e5e5; }
+    .comments-form .area-text {
+      clear: both;
+      margin-bottom: 20px; }
+    .comments-form-inputs {
+      margin-bottom: 20px;
+      clear: both;
+      overflow: hidden; }
+      .comments-form-inputs .input-text {
+        overflow: hidden; }
+        .comments-form-inputs .input-text:first-child {
+          width: calc(50% - 18px);
+          margin-right: 18px;
+          float: left; }
+        .comments-form-inputs .input-text:last-child {
+          width: calc(50% - 18px);
+          margin-left: 18px;
+          float: right; }
+    .comments-form .button {
+      margin-right: 40px; }
+    .comments-form .contacts-form-notice {
+      display: inline-block; }
+
+.articles {
+  margin-top: 20px;
+  position: relative; }
+  .articles .article-video {
+    margin-top: 0; }
+  .articles-item {
+    margin-bottom: 100px;
+    position: relative; }
+    .articles-item:first-child .up, .articles-item:nth-child(2) .up {
+      display: none; }
+    .articles-item:last-child {
+      margin-bottom: 0; }
+  .articles .tags {
+    display: inline-block; }
+  .articles .button {
+    margin-right: 40px;
+    margin-bottom: 20px; }
+  .articles .article-short-text {
+    margin-bottom: 54px; }
+  .articles-picture {
+    margin-bottom: 37px;
+    display: block; }
+    .articles-picture img {
+      width: 100%; }
+
+.blog-main-container {
+  position: relative; }
+
+.up {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  color: #9a9ea3;
+  bottom: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -260px; }
+  .up .fa {
+    position: absolute;
+    font-size: 31px;
+    margin-right: 10px;
+    left: -33px;
+    top: 3px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }

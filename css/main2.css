@@ -1,0 +1,673 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700,900&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900");
+@font-face {
+  font-family: 'Muller Regular';
+  src: url("../fonts/MullerRegular.eot?v=4.7.0");
+  src: url("../fonts/MullerRegular.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerRegular.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerRegular.woff?v=4.7.0") format("woff"), url("../fonts/MullerRegular.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerRegular.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Black';
+  src: url("../fonts/MullerBlack.eot?v=4.7.0");
+  src: url("../fonts/MullerBlack.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerBlack.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerBlack.woff?v=4.7.0") format("woff"), url("../fonts/MullerBlack.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerBlack.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Light';
+  src: url("../fonts/MullerLight.eot?v=4.7.0");
+  src: url("../fonts/MullerLight.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/MullerLight.woff2?v=4.7.0") format("woff2"), url("../fonts/MullerLight.woff?v=4.7.0") format("woff"), url("../fonts/MullerLight.ttf?v=4.7.0") format("truetype"), url("../fonts/MullerLight.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Muller Medium';
+  src: url("../fonts/MullerMedium.eot");
+  src: url("../fonts/MullerMedium.woff2") format("woff2"), url("../fonts/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium.ttf") format("truetype"), url("../fonts/MullerMedium.svg#MullerMedium") format("svg"), url("../fonts/MullerMedium.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+.banner.contacts-banner {
+  background: url("../img/banner.jpg") no-repeat top center;
+  background-size: cover; }
+  .banner.contacts-banner .prime-contacts {
+    height: 100vh; }
+    .banner.contacts-banner .prime-contacts h1 {
+      margin: 0.78em 0; }
+
+.map2 {
+  height: 750px; }
+
+section.contacts-page {
+  padding-top: 73px; }
+
+.our-team {
+  padding-bottom: 164px;
+  padding-top: 79px;
+  background: url("../img/services.jpg") no-repeat center/cover; }
+  .our-team h2.title {
+    margin-bottom: 12px; }
+  .our-team p {
+    line-height: 19px;
+    color: #bbbbbb; }
+    .our-team p:after {
+      content: '';
+      display: block;
+      max-width: 215px;
+      width: 100%;
+      height: 1px;
+      background-color: #ac9455;
+      margin: 26px auto 0; }
+  .our-team .our-team-list {
+    padding-top: 68px; }
+    .our-team .our-team-list .col-lg-3 {
+      text-align: center; }
+      .our-team .our-team-list .col-lg-3:hover .photo, .our-team .our-team-list .col-lg-3:focus .photo {
+        border-color: #ac9455; }
+        .our-team .our-team-list .col-lg-3:hover .photo img, .our-team .our-team-list .col-lg-3:focus .photo img {
+          filter: none; }
+        .our-team .our-team-list .col-lg-3:hover .photo:after, .our-team .our-team-list .col-lg-3:focus .photo:after {
+          display: none; }
+      .our-team .our-team-list .col-lg-3 .photo {
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 150px;
+        border: 2px solid transparent;
+        position: relative; }
+        .our-team .our-team-list .col-lg-3 .photo img {
+          filter: grayscale(100%);
+          filter: gray; }
+        .our-team .our-team-list .col-lg-3 .photo:after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: rgba(148, 147, 147, 0.77);
+          position: absolute;
+          top: 0; }
+      .our-team .our-team-list .col-lg-3 .name {
+        font-family: "Muller Medium";
+        color: white;
+        margin-top: 35px;
+        font-size: 17px;
+        letter-spacing: 4.3px;
+        margin-bottom: 19px; }
+      .our-team .our-team-list .col-lg-3 .titul {
+        text-transform: uppercase;
+        color: #ac9455;
+        font-family: "Muller Regular";
+        font-size: 11px;
+        letter-spacing: 1.1px;
+        margin-bottom: 29px; }
+      .our-team .our-team-list .col-lg-3 .info {
+        margin-bottom: 43px;
+        line-height: 24px;
+        color: #bbbbbb; }
+      .our-team .our-team-list .col-lg-3 .in-social a {
+        margin-left: 4px;
+        margin-right: 4px;
+        text-decoration: none; }
+
+.partnership {
+  padding-top: 65px;
+  padding-bottom: 73px; }
+  .partnership .partnership-and-vacancy {
+    padding: 30px;
+    padding-top: 42px;
+    padding-bottom: 72px;
+    background-color: #3f403f;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden; }
+    .partnership .partnership-and-vacancy h3 {
+      font-family: "Muller Black";
+      color: #cccccc;
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 0.3px;
+      margin-bottom: 37px; }
+    .partnership .partnership-and-vacancy p {
+      color: #bbbbbb;
+      line-height: 20px;
+      margin-bottom: 20px; }
+    .partnership .partnership-and-vacancy div {
+      color: #ac9455;
+      font-family: "Muller Light"; }
+      .partnership .partnership-and-vacancy div span {
+        font-family: 'Open Sans', sans-serif;
+        color: #737372;
+        display: block;
+        font-size: 12px; }
+    .partnership .partnership-and-vacancy .contact-info {
+      max-width: 345px;
+      margin: 0 auto; }
+      .partnership .partnership-and-vacancy .contact-info .email {
+        float: left;
+        width: 150px;
+        margin-top: 18px; }
+        .partnership .partnership-and-vacancy .contact-info .email span {
+          letter-spacing: 4px;
+          margin-bottom: 10px; }
+      .partnership .partnership-and-vacancy .contact-info .tel {
+        float: right;
+        width: 150px;
+        margin-top: 18px; }
+        .partnership .partnership-and-vacancy .contact-info .tel span {
+          letter-spacing: 4px;
+          margin-bottom: 10px; }
+  .partnership .vacancy-block h3 {
+    margin-bottom: 36px; }
+  .partnership .vacancy-block div {
+    font-size: 14px;
+    margin-top: 19px; }
+    .partnership .vacancy-block div span {
+      font-size: 14px;
+      color: #bbbbbb;
+      display: inline-block; }
+
+.banner.partners-banner {
+  background: url("../img/partner-banner.jpg") no-repeat top center/cover;
+  height: 100vh; }
+  .banner.partners-banner .prime-partners h1 {
+    margin: 0.78em 0;
+    margin-bottom: 37px; }
+  .banner.partners-banner .prime-partners span {
+    color: #bbbbbb;
+    max-width: 640px;
+    line-height: 20px;
+    display: block;
+    font-size: 16px; }
+
+section.contacts.contacts-partners {
+  padding-bottom: 145px; }
+  section.contacts.contacts-partners .container h2 {
+    margin-top: 52px;
+    margin-bottom: 12px; }
+  section.contacts.contacts-partners .container p {
+    margin-bottom: 48px; }
+  section.contacts.contacts-partners .container .row .contacts-address li:first-child {
+    margin-top: 75px;
+    margin-bottom: 35px; }
+  section.contacts.contacts-partners .container .row .contacts-address li:last-child {
+    margin-top: 34px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif; }
+    section.contacts.contacts-partners .container .row .contacts-address li:last-child:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -4px;
+      background: transparent url(../img/email.png) center center no-repeat;
+      background-size: contain;
+      width: 18px;
+      height: 24px; }
+  section.contacts.contacts-partners .container .row ul.contacts-social {
+    margin: 68px 0 0;
+    padding: 0; }
+
+section.our-dialers {
+  background: url("../img/services.jpg") no-repeat center/cover;
+  padding-top: 96px;
+  padding-bottom: 174px; }
+  section.our-dialers .address-dialers-list {
+    padding-top: 52px;
+    padding-left: 0;
+    list-style: none;
+    font-family: "Muller Regular"; }
+    section.our-dialers .address-dialers-list li > div {
+      padding-left: 30px; }
+    section.our-dialers .address-dialers-list .name-dialer {
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      color: #ac9455;
+      font-weight: 900; }
+    section.our-dialers .address-dialers-list .address-dialer {
+      padding-right: 81px;
+      line-height: 22px;
+      font-size: 18px;
+      margin-top: 38px;
+      margin-bottom: 28px;
+      color: #cccccc;
+      background: url("../img/pin-color.png") no-repeat top left; }
+    section.our-dialers .address-dialers-list .tel-dialer {
+      font-size: 17px;
+      color: #cccccc;
+      background: url("../img/phone-color.png") no-repeat center left; }
+    section.our-dialers .address-dialers-list .email-dialer {
+      color: #737372;
+      background: url("../img/emai-colorl.png") no-repeat top left;
+      margin-top: 36px;
+      font-size: 15px;
+      margin-bottom: 15px; }
+
+section.dark-block-services {
+  background-color: #f2f2f2; }
+
+section.white-block-services, section.dark-block-services {
+  padding-top: 94px;
+  padding-bottom: 72px; }
+  section.white-block-services .container > span, section.dark-block-services .container > span {
+    font-family: "Muller Medium";
+    font-size: 17px;
+    letter-spacing: 6.8px;
+    color: #ac9455;
+    margin-bottom: 43px;
+    display: block; }
+  section.white-block-services .container .col-lg-7 .img-rifle img, section.dark-block-services .container .col-lg-7 .img-rifle img {
+    margin-left: -47px; }
+  section.white-block-services .container .col-lg-5, section.dark-block-services .container .col-lg-5 {
+    padding-left: 0;
+    padding-right: 0; }
+    section.white-block-services .container .col-lg-5 p, section.dark-block-services .container .col-lg-5 p {
+      line-height: 24px;
+      padding-top: 2px;
+      font-size: 15px; }
+      section.white-block-services .container .col-lg-5 p span, section.dark-block-services .container .col-lg-5 p span {
+        font-weight: 600; }
+    section.white-block-services .container .col-lg-5 ul, section.dark-block-services .container .col-lg-5 ul {
+      margin-top: 52px;
+      padding-left: 25px;
+      list-style: none; }
+      section.white-block-services .container .col-lg-5 ul li, section.dark-block-services .container .col-lg-5 ul li {
+        padding-left: 75px;
+        font-family: "Muller Medium";
+        margin-bottom: 50px; }
+        section.white-block-services .container .col-lg-5 ul li .name-upgrade, section.dark-block-services .container .col-lg-5 ul li .name-upgrade {
+          letter-spacing: 1px;
+          color: #ac9455;
+          font-size: 19px;
+          text-transform: uppercase; }
+        section.white-block-services .container .col-lg-5 ul li .info-upgrade, section.dark-block-services .container .col-lg-5 ul li .info-upgrade {
+          color: #9a9ea3;
+          font-family: "Muller Regular";
+          line-height: 25px;
+          font-size: 17px; }
+        section.white-block-services .container .col-lg-5 ul li:first-child, section.dark-block-services .container .col-lg-5 ul li:first-child {
+          background: url("../img/brash.png") no-repeat top 3px left; }
+        section.white-block-services .container .col-lg-5 ul li:nth-child(2), section.dark-block-services .container .col-lg-5 ul li:nth-child(2) {
+          background: url("../img/vector.png") no-repeat top left; }
+        section.white-block-services .container .col-lg-5 ul li:nth-child(3), section.dark-block-services .container .col-lg-5 ul li:nth-child(3) {
+          background: url("../img/sloi.png") no-repeat top left; }
+        section.white-block-services .container .col-lg-5 ul li:nth-child(4), section.dark-block-services .container .col-lg-5 ul li:nth-child(4) {
+          background: url("../img/brash.png") no-repeat top 3px left; }
+    section.white-block-services .container .col-lg-5 .button-services, section.dark-block-services .container .col-lg-5 .button-services {
+      font-family: "Muller Regular";
+      font-weight: 600;
+      color: black;
+      text-decoration: none;
+      padding: 12px 13px 9px 13px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      border: 2px solid #ac9455;
+      border-radius: 11px;
+      text-transform: uppercase; }
+
+section.white-block-services:nth-child(4) {
+  padding-bottom: 128px; }
+  section.white-block-services:nth-child(4) .container .col-lg-7 .img-rifle img {
+    margin-left: -80px; }
+  section.white-block-services:nth-child(4) .container .col-lg-5 > p {
+    padding-right: 19px;
+    margin-top: 10px; }
+  section.white-block-services:nth-child(4) .container .col-lg-5 .button-services {
+    margin-top: 0;
+    display: inline-block; }
+
+section.dark-block-services {
+  padding-bottom: 112px; }
+  section.dark-block-services:nth-child(5) {
+    padding-bottom: 141px; }
+    section.dark-block-services:nth-child(5) .container .col-lg-5 p {
+      margin-bottom: 23px;
+      letter-spacing: 0.299px;
+      padding-right: 4px; }
+    section.dark-block-services:nth-child(5) .container .col-lg-5 .button-services {
+      display: inline-block;
+      margin-top: 34px; }
+    section.dark-block-services:nth-child(5) .col-lg-7 .img-rifle img {
+      position: relative; }
+    section.dark-block-services:nth-child(5) .col-lg-7 .img-rifle span {
+      display: inline-block;
+      font-family: "Muller Medium";
+      color: #ac9455;
+      width: 300px;
+      position: absolute;
+      bottom: -95px;
+      line-height: 21px;
+      padding-left: 69px; }
+    section.dark-block-services:nth-child(5) .col-lg-7 .img-rifle .book {
+      position: absolute;
+      right: -26px;
+      bottom: -236px; }
+  section.dark-block-services .container > span {
+    margin-bottom: 11px; }
+  section.dark-block-services .container .col-lg-7 .img-rifle img {
+    margin-left: -237px; }
+  section.dark-block-services .container .col-lg-5 {
+    padding-left: 15px; }
+    section.dark-block-services .container .col-lg-5 ul li {
+      margin-bottom: 24px;
+      padding-left: 73px; }
+      section.dark-block-services .container .col-lg-5 ul li:last-child {
+        margin-bottom: 75px; }
+      section.dark-block-services .container .col-lg-5 ul li span {
+        line-height: 23px; }
+
+.banner.wiki-article-banner {
+  background: url("../img/wiki-article-banner.jpg") no-repeat top center;
+  background-size: cover;
+  height: 100vh; }
+  .banner.wiki-article-banner .prime-wiki-article {
+    padding-top: 62px; }
+    .banner.wiki-article-banner .prime-wiki-article span {
+      font-family: "Muller Regular";
+      color: #707478;
+      font-size: 33px;
+      letter-spacing: 6px; }
+    .banner.wiki-article-banner .prime-wiki-article h1 {
+      margin-top: 4px;
+      padding-bottom: 10px; }
+
+main.blog-main.wiki-main .container section.with-aside h1 {
+  margin-bottom: 86px; }
+
+main.blog-main.wiki-main .container section.with-aside .article-short-text {
+  font-size: 21px;
+  margin-bottom: 56px; }
+
+main.blog-main.wiki-main .container section.with-aside img {
+  width: 100%;
+  margin-bottom: 62px; }
+
+main.blog-main.wiki-main .container section.with-aside > a {
+  margin-top: 36px;
+  background-color: #ac9455;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  padding: 0 21px;
+  height: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 10px;
+  transition: .2s;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-family: "Muller Regular";
+  margin-bottom: 71px; }
+
+main.blog-main.wiki-main .container section.with-aside .share span {
+  font-family: "Muller Medium";
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px; }
+
+main.blog-main.wiki-main .container section.with-aside .share .social-share {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  main.blog-main.wiki-main .container section.with-aside .share .social-share li {
+    display: inline-block;
+    margin-right: 60px; }
+    main.blog-main.wiki-main .container section.with-aside .share .social-share li a {
+      text-decoration: none;
+      font-size: 23px;
+      color: #cccccc; }
+      main.blog-main.wiki-main .container section.with-aside .share .social-share li a span {
+        font-family: "Muller Medium";
+        padding: 7px 6px 6px 12px;
+        float: right;
+        display: block;
+        font-size: 12px;
+        padding-left: 15px; }
+    main.blog-main.wiki-main .container section.with-aside .share .social-share li a.active {
+      color: #ac9455; }
+
+main.blog-main.wiki-main .container .aside {
+  padding-top: 84px; }
+  main.blog-main.wiki-main .container .aside .aside-item {
+    margin-bottom: 59px; }
+    main.blog-main.wiki-main .container .aside .aside-item:nth-child(3) {
+      margin-bottom: 31px; }
+    main.blog-main.wiki-main .container .aside .aside-item:nth-child(4) {
+      margin-bottom: 72px; }
+    main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters {
+      padding-left: 0; }
+      main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters li, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters li {
+        display: inline-block;
+        margin-bottom: 6px;
+        margin-right: 13px; }
+        main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters li a, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters li a {
+          color: #ac9455;
+          text-decoration: none;
+          font-family: "Muller Medium"; }
+          main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters li a:hover, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters li a:hover, main.blog-main.wiki-main .container .aside .aside-item .aside-rus-letters li a:focus, main.blog-main.wiki-main .container .aside .aside-item .aside-eng-letters li a:focus {
+            text-decoration: underline; }
+  main.blog-main.wiki-main .container .aside .aside-social {
+    margin-bottom: 155px;
+    padding-left: 0;
+    list-style: none; }
+
+.banner.wiki-list-banner {
+  background: url("../img/partner-banner.jpg") no-repeat top center/cover;
+  height: 100vh; }
+  .banner.wiki-list-banner .prime-partners h1 {
+    margin: 0.78em 0;
+    margin-bottom: 68px;
+    letter-spacing: 1px; }
+  .banner.wiki-list-banner .prime-partners span {
+    color: #bbbbbb;
+    max-width: 640px;
+    line-height: 20px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 28px; }
+  .banner.wiki-list-banner .prime-partners .button-color {
+    margin-top: 0;
+    background-color: #ac9455;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 0 21px;
+    height: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    transition: .2s;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-family: "Muller Regular";
+    margin-bottom: 71px; }
+
+main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters {
+  padding-left: 0; }
+  main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters li, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters li {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-right: 13px; }
+    main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters li a, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters li a {
+      color: #ac9455;
+      text-decoration: none;
+      font-family: "Muller Medium"; }
+      main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters li a:hover, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters li a:hover, main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters li a:focus, main.blog-main.wiki-main.wiki-main-list .container .article .aside-eng-letters li a:focus {
+        text-decoration: underline; }
+
+main.blog-main.wiki-main.wiki-main-list .container .article .aside-rus-letters {
+  margin-top: 8px;
+  margin-bottom: 16px; }
+
+main.blog-main.wiki-main.wiki-main-list .container .aside {
+  padding-top: 0; }
+
+main.blog-main.wiki-main.wiki-main-list .container .wiki-lists form {
+  float: right; }
+
+main.blog-main.wiki-main.wiki-main-list .container .wiki-lists .col-lg-1 span {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: #ac9455;
+  font-size: 55px;
+  line-height: 48px; }
+
+main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 {
+  list-style: none;
+  margin-top: 7px;
+  margin-bottom: 30px; }
+  main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 li {
+    margin-bottom: 16px;
+    padding-right: 30px; }
+    main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 li a {
+      display: block;
+      text-decoration: none;
+      outline: none;
+      font-size: 14px;
+      color: #9a9ea3;
+      transition: .2s;
+      position: relative; }
+      main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 li a:hover, main.blog-main.wiki-main.wiki-main-list .container .wiki-lists ul.col-lg-2 li a:focus {
+        text-decoration: underline; }
+
+section.achievements.achievements-about {
+  background: initial;
+  padding-bottom: 66px;
+  padding-top: 96px; }
+  section.achievements.achievements-about .achievements-title {
+    color: black; }
+  section.achievements.achievements-about .achievements-text {
+    line-height: 149%;
+    padding-left: 22px;
+    padding-right: 23px; }
+
+.banner.banner-about {
+  background: url("../img/banner-about.jpg") no-repeat center/cover; }
+  .banner.banner-about .main-carousel-outer .main-carousel-title {
+    margin-bottom: 40px;
+    margin-top: 4px; }
+
+section.achievements.awards-about {
+  background: initial;
+  padding-top: 62px;
+  padding-bottom: 36px; }
+  section.achievements.awards-about .achievements-title {
+    color: black; }
+
+section.slider-adout .container-fluid {
+  padding-left: 73px;
+  padding-right: 73px;
+  background: url("../img/partner-banner.jpg") no-repeat center/cover; }
+  section.slider-adout .container-fluid .owl-dots {
+    display: none; }
+  section.slider-adout .container-fluid .owl-nav {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 9; }
+    section.slider-adout .container-fluid .owl-nav .owl-prev {
+      position: absolute;
+      left: -53px !important; }
+    section.slider-adout .container-fluid .owl-nav .owl-next {
+      position: absolute;
+      right: -53px !important; }
+
+section.our-history {
+  background: url("../img/our-history.jpg") no-repeat center/cover;
+  padding-top: 69px;
+  padding-bottom: 146px; }
+  section.our-history .history-in-years {
+    padding-top: 132px;
+    background: url("../img/dots.png") no-repeat top 40px left 475px; }
+    section.our-history .history-in-years .row:first-child .col-md-7 .history-text:before {
+      content: "2005"; }
+    section.our-history .history-in-years .row:nth-child(2) .col-md-7 .history-text:before {
+      content: "Июнь 2005"; }
+    section.our-history .history-in-years .row:nth-child(3) .col-md-7 .history-text:before {
+      content: "2010"; }
+    section.our-history .history-in-years .row:nth-child(4) .col-md-7 .history-text:before {
+      content: "21 Июля 2015"; }
+    section.our-history .history-in-years .col-md-4 {
+      overflow: hidden;
+      margin-bottom: 12px;
+      margin-top: 15px; }
+    section.our-history .history-in-years .col-md-7 {
+      padding-left: 125px; }
+      section.our-history .history-in-years .col-md-7 .history-text.active:after {
+        left: -20px;
+        top: 15px;
+        color: #ac9455;
+        font-size: 65px; }
+      section.our-history .history-in-years .col-md-7 .history-text {
+        padding-top: 39px;
+        font-family: "Muller Regular";
+        font-weight: 700;
+        color: white;
+        max-width: 410px;
+        line-height: 20px;
+        font-size: 15px;
+        padding-left: 42px;
+        position: relative; }
+        section.our-history .history-in-years .col-md-7 .history-text:after {
+          content: '.';
+          position: absolute;
+          left: -18px;
+          top: 17px;
+          font-size: 41px;
+          color: #7d888a; }
+        section.our-history .history-in-years .col-md-7 .history-text:before {
+          content: "2005";
+          width: 75px;
+          position: absolute;
+          left: -115px;
+          font-size: 9px;
+          font-family: "Muller Regular";
+          text-align: right;
+          color: #b1b1b0;
+          top: 26px; }
+      section.our-history .history-in-years .col-md-7 p {
+        font-family: 'Montserrat';
+        padding-left: 42px;
+        color: #b1b1b0;
+        font-size: 12px;
+        margin-top: 4px;
+        line-height: 19px; }
+
+div i {
+  display: inline-block;
+  margin: 0 10px; }
+
+.search {
+  background-color: #000;
+  display: none;
+  position: relative; }
+
+.search input {
+  position: absolute;
+  padding-left: 20px;
+  right: 0;
+  z-index: 9;
+  border: 1px solid;
+  width: 305px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgba(63, 64, 63, 0.9);
+  color: #ac9455;
+  outline: none;
+  cursor: pointer; }
+
+.search-icon {
+  cursor: pointer; }
